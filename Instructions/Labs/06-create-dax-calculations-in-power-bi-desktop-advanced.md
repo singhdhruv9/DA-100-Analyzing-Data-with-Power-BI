@@ -43,6 +43,8 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 11. Perform Data Analysis in Power BI Desktop
 
+12. Enforce Row-Level Security
+
 ## **Exercise 1: Work with Filter Context**
 
 In this exercise you will create measures with DAX expressions involving filter context manipulation.
@@ -111,11 +113,11 @@ In this task you will create a matrix visual to support testing your new measure
 
 3. Resize the matrix visual to fill the entire page.
 
-4. To configure the matrix visual fields, from the **Fields** pane, drag the **Region | Regions** hierarchy, and drop it inside the visual.
+4. To configure the matrix visual fields, from the **Fields** pane, drag the **Region \| Regions** hierarchy, and drop it inside the visual.
 
-    *The labs use a shorthand notation to reference a field or hierarchy. It will look like this: **Region | Regions**. In this example, **Region** is the table name and **Regions** is the hierarchy name.*
+    *The labs use a shorthand notation to reference a field or hierarchy. It will look like this: **Region \| Regions**. In this example, **Region** is the table name and **Regions** is the hierarchy name.*
 
-5. Add also the **Sales | Sales** field.
+5. Add also the **Sales \| Sales** field.
 
 6. To expand the entire hierarchy, at the top-right of the matrix visual, click the forked-double arrow icon twice.
 
@@ -392,7 +394,7 @@ In this task you will create a sales YoY growth measure.
 
 3. Notice that the new measure returns BLANK for the first 12 months (because there were no sales recorded before fiscal year 2017).
 
-4. Notice that the **Sales YoY Growth** measure value for **2018 Jul** is the **Sales** value for **2017 Jan**.
+4. Notice that the **Sales YoY Growth** measure value for **2018 Jul** is the **Sales** value for **2017 Jul**.
 
     ![Picture 61](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image22.png)
 

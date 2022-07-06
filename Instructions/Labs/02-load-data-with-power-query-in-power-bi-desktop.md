@@ -42,6 +42,8 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 11. Perform Data Analysis in Power BI Desktop
 
+12. Enforce Row-Level Security
+
 ## **Exercise 1: Load Data**
 
 In this exercise you will apply transformations to each of the queries created in the previous lab.
@@ -461,7 +463,7 @@ In this task you will configure the **Sales** query.
 
 7. In the **Custom Column Formula** box, enter the following expression (after the equals symbol):
 
-8. For your convenience, you can copy the expression from the **D:\DA100\Labs\load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** file.
+8. For your convenience, you can copy the expression from the **D:\DA100\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** file.
 
 
    **Power Query**

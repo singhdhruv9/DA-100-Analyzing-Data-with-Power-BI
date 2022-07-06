@@ -43,6 +43,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 11. Perform Data Analysis in Power BI Desktop
 
+12. Enforce Row-Level Security
 
 ## **Exercise 1: Create a Report**
 
@@ -78,7 +79,39 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 1. Leave the Microsoft Edge browser window open.
 
-### **Task 2: Get started – Open report**
+### **Task 2: Get started – Enable Map and filled map visuals**
+
+In this task you will enable map and filled map visuals in the environment for the lab by updating the Integration settings in the Power BI Admin portal. 
+
+
+1. To open the Power BI Admin portal, at the top-right of the browser, click the **Settings** icon.
+
+ 	![Picture 101](Linked_image_Files/07-design-report-in-power-bi-desktop_image101.png)
+
+1. Select **Admin portal**.
+
+ 	![Picture 102](Linked_image_Files/07-design-report-in-power-bi-desktop_image102.png)
+
+1. Scroll down the page to Integration settings. Click the arrow to expand the Map and filled map visuals option.
+
+ 	![Picture 103](Linked_image_Files/07-design-report-in-power-bi-desktop_image103.png)
+
+1. Set the Map and filled map visuals option to **Enabled**.
+
+1. Click **Apply**, to apply the changes. 
+
+	![Picture 104](Linked_image_Files/07-design-report-in-power-bi-desktop_image104.png)
+
+1. A message will appear at the top-right of the browser stating the Tenant settings changes will be applied within the next 15 minutes. 
+
+
+	![Picture 105](Linked_image_Files/07-design-report-in-power-bi-desktop_image105.png)
+
+
+
+1. Leave the Microsoft Edge browser window open.
+
+### **Task 3: Get started – Open report**
 
 In this task you will setup the environment for the lab by opening the starter report.
 
@@ -134,7 +167,7 @@ In this task you will setup the environment for the lab by opening the starter r
 
 	![Picture 4](Linked_image_Files/07-design-report-in-power-bi-desktop_image11.png)
 
-### **Task 3: Design page 1**
+### **Task 4: Design page 1**
 
 In this task you will design the first report page. When you’ve completed the design, the page will look like the following:
 
@@ -165,10 +198,9 @@ In this task you will design the first report page. When you’ve completed the 
 	![Picture 12](Linked_image_Files/07-design-report-in-power-bi-desktop_image17.png)
 
 7. To add a slicer, first de-select the image by clicking an empty area of the report page.
-
-8. In the **Fields** pane, select the **Date | Year** field (not the **Year** level of the hierarchy).
-
-	*The labs use a shorthand notation to reference a field. It will look like this: **Date | Year**. In this example, **Date** is the table name and **Year** is the field name.*
+8. In the **Fields** pane, select the **Date \| Year** field (not the **Year** level of the hierarchy).
+	
+	*The labs use a shorthand notation to reference a field. It will look like this: **Date \| Year**. In this example, **Date** is the table name and **Year** is the field name.*
 
 9. Notice that a table of year values has been added to the report page.
 
@@ -192,7 +224,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 14. De-select the slicer by clicking an empty area of the report page.
 
-15. Create a second slicer, based on the **Region | Region** field (not the **Region** level of the hierarch).
+15. Create a second slicer, based on the **Region \| Region** field (not the **Region** level of the hierarch).
 
 16. Leave the slicer as a list, and then resize and position the slicer beneath the **Year** slicer.
 
@@ -226,9 +258,9 @@ In this task you will design the first report page. When you’ve completed the 
 
 24. Drag and drop the following fields into the visual:
 
-	- Date | Month
+	- Date \| Month
 
-	- Sales | Sales
+	- Sales \| Sales
 
 25. In the visual fields pane (not the **Fields** pane—the visual fields pane is located beneath the **Visualizations** pane), notice that the fields are assigned to the **Shared Axis** and **Column Values** wells/areas.
 
@@ -236,7 +268,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 	*By dragging fields into a visual, they will be added to default wells/areas. For precision, you can drag fields directly into the wells/areas, as you will do next.*
 
-26. From the **Fields** pane, drag the **Sales | Profit Margin** field into the **Line Values** well/area.
+26. From the **Fields** pane, drag the **Sales \| Profit Margin** field into the **Line Values** well/area.
 
 	![Picture 28](Linked_image_Files/07-design-report-in-power-bi-desktop_image29.png)
 
@@ -262,11 +294,11 @@ In this task you will design the first report page. When you’ve completed the 
 
 33. Add the following fields to the visual wells/areas:
 
-	- Location: **Region | Country**
+	- Location: **Region \| Country**
 
-	- Legend: **Product | Category**
+	- Legend: **Product \| Category**
 
-	- Size: **Sales | Sales**
+	- Size: **Sales \| Sales**
 
 34. De-select the chart by clicking an empty area of the report page.
 
@@ -280,9 +312,9 @@ In this task you will design the first report page. When you’ve completed the 
 
 37. Add the following fields to the visual wells/areas:
 
-	- Axis: **Product | Category**
+	- Axis: **Product \| Category**
 
-	- Value: **Sales | Quantity**
+	- Value: **Sales \| Quantity**
 
 38. To format the visual, open the **Format** pane.
 
@@ -298,7 +330,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 	*The design of the first page is now complete.*
 
-### **Task 4: Design page 2**
+### **Task 5: Design page 2**
 
 In this task you will design the second report page. When you’ve completed the design, the page will look like the following:
 
@@ -317,7 +349,7 @@ In this task you will design the second report page. When you’ve completed the
   
 ‎ 
 
-3. Add a slicer based on the **Region | Region** field.
+3. Add a slicer based on the **Region \| Region** field.
 
 4. Use the **Format** pane to enable the “Select All” option (in the **Selection Controls** group).
 
@@ -329,7 +361,7 @@ In this task you will design the second report page. When you’ve completed the
 
 	![Picture 45](Linked_image_Files/07-design-report-in-power-bi-desktop_image41.png)
 
-7. Add the **Date | Fiscal** hierarchy to the matrix **Rows** well/area.
+7. Add the **Date \| Fiscal** hierarchy to the matrix **Rows** well/area.
 
 	![Picture 46](Linked_image_Files/07-design-report-in-power-bi-desktop_image42.png)
 
@@ -351,7 +383,7 @@ In this task you will design the second report page. When you’ve completed the
 
 	![Picture 57](Linked_image_Files/07-design-report-in-power-bi-desktop_image44.png)
 
-10. From the **Fields** pane, drag the **Product | Category** field into the **Filter On This Page** well/area.
+10. From the **Fields** pane, drag the **Product \| Category** field into the **Filter On This Page** well/area.
 
 11. Inside the filter card, at the top-right, click the arrow to collapse the card.
 
@@ -373,7 +405,7 @@ In this task you will design the second report page. When you’ve completed the
 
 	*The design of the second page is now complete.*
 
-### **Task 5: Design page 3**
+### **Task 6: Design page 3**
 
 In this task you will design the third—and final—report page. When you’ve completed the design, the page will look like the following:
 
@@ -381,13 +413,13 @@ In this task you will design the third—and final—report page. When you’ve 
 
 1. Create a new page, and then rename it as **My Performance**.
 
-1. To simulate the performance of row-level security filters, drag the **Salesperson (Performance) | Salesperson** field to the page level filters in the filter pane.
+1. To simulate the performance of row-level security filters, drag the **Salesperson (Performance) \| Salesperson** field to the page level filters in the filter pane.
 	
 	![Image of Salesperson field in filter pane.](Linked_image_Files/07-design-report-in-power-bi-desktop_image999.png) 
 
 1. Select **Michael Blythe**. Data on the **My Performance** report page will now be filtered to display data for Michael Blythe only.
 
-1. Add a dropdown slicer based on the **Date | Year** field, and then resize and position it so it sits at the top-left corner of the page.
+1. Add a dropdown slicer based on the **Date \| Year** field, and then resize and position it so it sits at the top-left corner of the page.
 
 	![Picture 70](Linked_image_Files/07-design-report-in-power-bi-desktop_image49.png)
 
@@ -403,13 +435,13 @@ In this task you will design the third—and final—report page. When you’ve 
 
 1. Add the following four fields to the visual:
 
-	- Sales | Sales
+	- Sales \| Sales
 
-	- Targets | Target
+	- Targets \| Target
 
-	- Targets | Variance
+	- Targets \| Variance
 
-	- Targets | Variance Margin
+	- Targets \| Variance Margin
 
 1. Format the visual:
 
@@ -427,9 +459,9 @@ In this task you will design the third—and final—report page. When you’ve 
 
 1. Add the following fields to the visual wells/areas:
 
-	- Axis: **Date | Month**
+	- Axis: **Date \| Month**
 
-	- Value: **Sales | Sales** and **Targets | Target**
+	- Value: **Sales \| Sales** and **Targets \| Target**
 
 	![Picture 80](Linked_image_Files/07-design-report-in-power-bi-desktop_image56.png)
 
@@ -447,7 +479,7 @@ In this task you will design the third—and final—report page. When you’ve 
 
 	*The design of the third—and final—page is now complete.*
 
-### **Task 6: Publish the report**
+### **Task 7: Publish the report**
 
 In this task you will publish the report.
 
@@ -523,7 +555,7 @@ In this task you will explore the report that was published to Power BI.
 
 	*Focus mode zooms the visual to full page size.*
 
-13. Hover the cursor over different segments of the pie charts to reveal tooltips.
+13. Hover the cursor over different segments of the bar charts to reveal tooltips.
 
 14. To return to the report page, at the top-left, click **Back to Report**.
 

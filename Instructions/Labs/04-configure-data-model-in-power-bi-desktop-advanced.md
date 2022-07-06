@@ -37,9 +37,11 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 9. Create a Power BI Dashboard
 
-11. Create a Power BI Paginated Report
+10. Create a Power BI Paginated Report
 
-10. Perform Data Analysis in Power BI Desktop
+11. Perform Data Analysis in Power BI Desktop
+
+12. Enforce Row-Level Security
 
 ## **Exercise 1: Create a Many-to many Relationship**
 
@@ -101,11 +103,11 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 1. In Power BI Desktop, in Report view, in the **Fields** pane, check the follow two fields to create a table visual:
 
-	- Salesperson | Salesperson
+	- Salesperson \| Salesperson
 
-	- Sales | Sales
+	- Sales \| Sales
 
-	*The labs use a shorthand notation to reference a field. It will look like this: **Salesperson | Salesperson** . In this example, **Salesperson**  is the table name and **Salesperson**  is the field name.*
+	*The labs use a shorthand notation to reference a field. It will look like this: **Salesperson \| Salesperson** . In this example, **Salesperson**  is the table name and **Salesperson**  is the field name.*
 
 	![Picture 1](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image9.png)
 
@@ -123,9 +125,9 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 5. Use the drag-and-drop technique to create the following two model relationships:
 
-	- **Salesperson | EmployeeKey** to **SalespersonRegion | EmployeeKey**
+	- **Salesperson \| EmployeeKey** to **SalespersonRegion \| EmployeeKey**
 
-	- **Region | SalesTerritoryKey** to **SalespersonRegion | SalesTerritoryKey**
+	- **Region \| SalesTerritoryKey** to **SalespersonRegion \| SalesTerritoryKey**
 
 	*The **SalespersonRegion** table can be considered to be a bridging table.*
 
@@ -183,7 +185,7 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 	*It’s a common observation of a many-to-many relationship due to the double, triple, etc. counting of regional sales results. Consider Brian Welcker, the second salesperson listed. His sales amount equals the total sales amount. It’s the correct result simply due to the fact the he’s the Director of Sales; his sales are measured by the sales of all regions.*
 
-	*While the many-to-many relationship is now working, it’s now not possible to analyze sales made by a salesperson (because the relationship is inactive). You’ll be able to reactive the relationship when you introduce a calculated table that to represent salesperson for performance analysis (of their regions) in the **Create DAX Calculations in Power BI Desktop, Part 1** lab.*
+	*While the many-to-many relationship is now working, it’s now not possible to analyze sales made by a salesperson (because the relationship is inactive). You’ll be able to reactivate the relationship when you introduce a calculated table that will allow analyzing sales made in the sales region(s) assigned to the salesperson (for performance analysis) in the **Create DAX Calculations in Power BI Desktop, Part 1** lab.*
 
 21. Switch to Modeling view, and then in the diagram, select the **Salesperson** table.
 
@@ -195,15 +197,15 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 In this task you will create a relationship to the **Targets** table
 
-1. Create a relationship from the **Salesperson (Performance) | EmployeeID** column and the **Targets | EmployeeID** column.
+1. Create a relationship from the **Salesperson (Performance) \| EmployeeID** column and the **Targets \| EmployeeID** column.
 
-2. In Report view, add the **Targets | Target** field to the table visual.
+2. In Report view, add the **Targets \| Target** field to the table visual.
 
 3. Resize the table visual so all columns are visible.
 
 	![Picture 5699](Linked_image_Files/04-configure-data-model-in-power-bi-desktop-advanced_image19.png)
 
-	*It’s now possible to visualize sales and targets—but take care for two reasons. First, there’s no filter on a time period, and so targets also include future target amounts. Second, targets are not additive, and so the total should not be displayed. They can either disabled by formatting the visual or removed by using calculation logic. You’ll follow the second approach by creationg a target measure in the **Create DAX Calculations in Power BI Desktop, Part 2** lab that’ll return BLANK when more than one salesperson is filtered.*
+	*It’s now possible to visualize sales and targets—but take care for two reasons. First, there’s no filter on a time period, and so targets also include future target amounts. Second, targets are not additive, and so the total should not be displayed. They can either be disabled by formatting the visual or removed by using calculation logic. You’ll follow the second approach by creating a target measure in the **Create DAX Calculations in Power BI Desktop, Part 2** lab that’ll return BLANK when more than one salesperson is filtered.*
 
 ### **Task 4: Finish up**
 

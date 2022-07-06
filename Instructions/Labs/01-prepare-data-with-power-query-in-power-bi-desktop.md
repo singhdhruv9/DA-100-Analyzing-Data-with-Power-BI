@@ -48,6 +48,8 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 11. Perform Data Analysis in Power BI Desktop
 
+12. Enforce Row-Level Security
+
 ## **Exercise 1: Prepare Data**
 
 In this exercise you will create eight Power BI Desktop queries. Six queries will source data from SQL Server, and two from CSV files.
@@ -144,7 +146,7 @@ In this task you will create queries based on SQL Server tables.
 
 	The preview data allows you to determine the columns and a sample of rows.
 
-7. To create queries, check the following six tables:
+7. To create queries, select the checkbox next to the following six tables:
 
 	- DimEmployee
 

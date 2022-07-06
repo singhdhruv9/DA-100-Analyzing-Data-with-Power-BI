@@ -55,6 +55,8 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 11. Perform Data Analysis in Power BI Desktop
 
+12. Enforce Row-Level Security
+
 ## **Exercise 1: Get Started**
 
 In this exercise you will open Power BI Report Builder to create and then save a report.
@@ -159,17 +161,17 @@ In this task you will configure the report header.
 
 1. To position and resize the image, in the **Properties** pane, configure the following properties:
 
-	- **Position | Location | Left** : 5
+	- **Position \| Location \| Left** : 5
 
-	- **Position | Location | Top** : 0
+	- **Position \| Location \| Top** : 0
 
-	- **Position | Size | Width** : 1
+	- **Position \| Size \| Width** : 1
 
-	- **Position | Size | Height** : 1
+	- **Position \| Size \| Height** : 1
 
 1. To resize the report header region, first select the region by clicking a blank area of the region.
 
-1. In the **Properties** pane, set the **General | Height** property to **1**.
+1. In the **Properties** pane, set the **General \| Height** property to **1**.
 
 1. Verify that the report header region contains a single textbox and image, and looks like the following:
 
@@ -327,13 +329,13 @@ In this task you will finalize the report header region design by adding textbox
 
 12. In the **Properties** pane, configure the following position properties:
 
-	- **Position | Location | Left** : 0
+	- **Position \| Location \| Left** : 0
 
-	- **Position | Location | Top** : 0.5
+	- **Position \| Location \| Top** : 0.5
 
-	- **Position | Size | Width** : 4
+	- **Position \| Size \| Width** : 4
 
-	- **Position | Size | Height** : 0.25
+	- **Position \| Size \| Height** : 0.25
 
 13. To format part of the textbox text, inside the new textbox, select only the **Sales Order:** text.
 
@@ -345,7 +347,7 @@ In this task you will finalize the report header region design by adding textbox
 
 15. Add another textbox to the report header region, and then enter the text **Reseller:** followed by a space.
 
-	*Tip: You can also add a textbox by right-clicking the canvas, and then selected **Insert | Text Box**.*
+	*Tip: You can also add a textbox by right-clicking the canvas, and then selected **Insert \| Text Box**.*
 
 16. After the space, insert a placeholder, and then set the value of the placeholder to use an expression.
 
@@ -357,13 +359,13 @@ In this task you will finalize the report header region design by adding textbox
 
 19. In the **Properties** pane, configure the following position properties:
 
-	- **Position | Location | Left** : 0
+	- **Position \| Location \| Left** : 0
 
-	- **Position | Location | Top** : 0.75
+	- **Position \| Location \| Top** : 0.75
 
-	- **Position | Size | Width** : 4
+	- **Position \| Size \| Width** : 4
 
-	- **Position | Size | Height** : 0.25
+	- **Position \| Size \| Height** : 0.25
 
 20. Format the **Reseller:** text in bold.
 
@@ -387,13 +389,13 @@ In this task you will finalize the report header region design by adding textbox
 
 27. In the **Properties** pane, configure the following position properties:
 
-	- **Position | Location | Left** : 0
+	- **Position \| Location \| Left** : 0
 
-	- **Position | Location | Top** : 1
+	- **Position \| Location \| Top** : 1
 
-	- **Position | Size | Width** : 4
+	- **Position \| Size \| Width** : 4
 
-	- **Position | Size | Height** : 0.25
+	- **Position \| Size \| Height** : 0.25
 
 28. Format the **Order Date:** text in bold.
 
@@ -435,13 +437,13 @@ In this task you will add a table data region to the report body.
 
 3. In the **Properties** pane, configure the following position properties:
 
-	- **Position | Location | Left** : 0
+	- **Position \| Location \| Left** : 0
 
-	- **Position | Location | Top** : 0
+	- **Position \| Location \| Top** : 0
 
 	*The table will display five columns. By default, the table template includes only three columns.*
 
-4. To add a column to the table, right-click inside any cell of the last column, and then select **Insert Column | Right**.
+4. To add a column to the table, right-click inside any cell of the last column, and then select **Insert Column \| Right**.
 
 	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML33b96fbd.PNG](Linked_image_Files/11-create-power-bi-paginated-report_image43.png)
 
@@ -517,23 +519,23 @@ In this task you will format the table data region.
 
 4. In the **Properties** pane (or the ribbon), configure the following properties:
 
-	- **Fill | BackgroundColor** : DarkGreen (tip: hover the cursor over each color to reveal its name)
+	- **Fill \| BackgroundColor** : DarkGreen (tip: hover the cursor over each color to reveal its name)
 
-	- **Font | Color** : White
+	- **Font \| Color** : White
 
-	- **Font | Font | FontWeight** : Bold
+	- **Font \| Font \| FontWeight** : Bold
 
 5. Select the first column guide.
 
 	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML342b0187.PNG](Linked_image_Files/11-create-power-bi-paginated-report_image52.png)
 
-6. In the **Properties** pane, set the **Position | Size | Width** property to **0.5**.
+6. In the **Properties** pane, set the **Position \| Size \| Width** property to **0.5**.
 
 7. Set the width of the second column to **2.5**.
 
 8. While pressing the **Ctrl** key, multi-select the last three column header textboxes (**Quantity**, **Unit Price** and **Amount**).
 
-9. In the **Properties** pane (or ribbon), set the **Alignment | TextAlign** property to **Right**.
+9. In the **Properties** pane (or ribbon), set the **Alignment \| TextAlign** property to **Right**.
 
 10. Set the **Line** detail textbox to left align.
 
@@ -611,7 +613,7 @@ In this task you will finalize the report design by ensuring multi-page reports 
 
 	*This selected the table header row.*
 
-5. In the **Properties** pane, set the **Other | RepeatOnNewPage** property to **True**.
+5. In the **Properties** pane, set the **Other \| RepeatOnNewPage** property to **True**.
 
 	*This ensures that the first static group (representing the table header) will repeat on all pages.*
 
@@ -619,7 +621,7 @@ In this task you will finalize the report design by ensuring multi-page reports 
 
 	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML34484edf.PNG](Linked_image_Files/11-create-power-bi-paginated-report_image64.png)
 
-7. In the **Expression** window, in the expression box, append a space, followed by **&amp; " | Page " &amp;**, to produce the following:
+7. In the **Expression** window, in the expression box, append a space, followed by **&amp; " \| Page " &amp;**, to produce the following:
 
 
 	**VB Script**
@@ -648,13 +650,13 @@ In this task you will finalize the report design by ensuring multi-page reports 
 
 	*The design of the report is now complete. Lastly, you will ensure that the page width is set to exactly six inches, and also remove the report parameter default value.*
 
-14. To select the report body, right-click any table textbox, and then select **Select | Body**.
+14. To select the report body, right-click any table textbox, and then select **Select \| Body**.
 
 	![C:\Users\PETERM~1\AppData\Local\Temp\SNAGHTML34507b38.PNG](Linked_image_Files/11-create-power-bi-paginated-report_image68.png)
 
 	*As the table fills the entire report body, this technique must be used to select the report body.*
 
-15. In the **Properties** pane, ensure that the **Position | Size | Width** property is set to **6**.
+15. In the **Properties** pane, ensure that the **Position \| Size \| Width** property is set to **6**.
 
 	*It is important the width is not greater than six inches, as rendering to print format would break the table up across multiple pages.*
 
